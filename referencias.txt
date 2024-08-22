@@ -1,0 +1,19 @@
+/*
+click.ogg,click2.ogg
+Fonte:https://opengameart.org/content/interface-sounds-starter-pack
+Author: 
+p0ss
+Thursday, March 3, 2011 - 18:43
+Art Type: 
+Sound Effect
+
+loop-menu.mp3
+Fonte:https://pixabay.com/pt/sound-effects/loop-menu-preview-109594/
+Sound Effect by <a href="https://pixabay.com/pt/users/liecio-3298866/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=109594">LIECIO</a> from <a href="https://pixabay.com/sound-effects//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=109594">Pixabay</a>
+
+beat-loop.mp3
+Fonte:https://pixabay.com/pt/sound-effects/beat-loop-by-marie-louise-janneman-21287/
+Sound Effect by <a href="https://pixabay.com/pt/users/mleckert82-6606463/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=21287">Marie-Louise Janneman</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=21287">Pixabay</a>
+
+*/
+  
