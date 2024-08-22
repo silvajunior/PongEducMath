@@ -91,12 +91,14 @@ function setup() {
   s=0;
   m=0;
   createCanvas(600, 400);
+  /*
   vd = createVideo("pong.mp4");
   vd.size(600, 400);
   vd.loop();
   vd.speed(1);
   vd.hide();
   vd.volume(0); 
+  */
   trilhaMenu.loop();
 }
 
@@ -117,8 +119,9 @@ if(!gameover){
       trilhaMenu.loop();
     }
     playTrilha = false;
-    let img = vd.get();
-    image(img, 0, 0);
+    //let img = vd.get();
+    //image(img, 0, 0);
+    background(0);
     s = 0;
     m = 0;
     menu();
