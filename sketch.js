@@ -25,6 +25,9 @@ function mostrarTxtVoltar(){
   fill(255);
 }
 function menu(){
+    respField.value('');
+    respField.hide();
+    resp = 'hide';
     cont = 0;
     s=0;
     m=0;
@@ -170,7 +173,11 @@ function info(){
   
 }
 function jogo(){
+  if(veloXBol > 0){veloXBol = vBol;}else{veloXBol = -vBol;}
+  if(veloYBol > 0){veloYBol = vBol;}else{veloYBol = -vBol;}
+
   if(respField.value() == tab[indexTab]){
+    ptsJ1 = ptsJ1 + 5;
     respField.value('');
     respField.hide();
     resp = 'hide';
@@ -208,7 +215,7 @@ function movBol(){
 function verColBord(){
   if (xBol + raio> width ||
      xBol - raio< 0){
-    veloXBol *= -1.1;
+    veloXBol *= -1;
   }
   if (yBol + raio> height ||
      yBol - raio < 0){
@@ -239,7 +246,7 @@ function movJ1() {
 function verColRaq(x, y) {
     colidiu = collideRectCircle(x, y, raqLarg, raqAlt, xBol, yBol, raio);
     if (colidiu) {
-        veloXBol = veloXBol+random(0,1);
+        veloXBol = veloXBol;
         veloXBol *= -1;
         raq.play();
         qtdCol++;
@@ -302,11 +309,11 @@ function incluiPlacar(){
 }
 function marcaPt() {
     if (xBol > 591) {
-        ptsJ1 += 1;
+        ptsJ1 += 5;
       pts.play()
     }
     if (xBol < 9) {
-        ptsJ2 += 1;
+        ptsJ2 += 5;
         pts.play();
     }
   if(ptsJ1 >= 100){
@@ -316,6 +323,11 @@ function marcaPt() {
     gameover = true;
     qtdCol = 0;
     trilha.stop();
+    respField.value('');
+    respField.hide();
+    resp = 'hide';
+    veloXBol = 3;
+    veloYBol = 3;
   }
   if(ptsJ2 >= 100){
     textSize(26);
@@ -323,5 +335,10 @@ function marcaPt() {
     text("J2 Ganhou!", 300, 200);
     gameover = true;
     trilha.stop();
+        respField.value('');
+    respField.hide();
+    resp = 'hide';
+    veloXBol = 3;
+    veloYBol = 3;
   }
 }
