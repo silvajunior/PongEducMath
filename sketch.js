@@ -1,4 +1,4 @@
-//https://youtu.be/7fCg8BEqypk
+//https://youtu.be/VcCcVm8Xb4c
 var tela = 0,xMenu=50,yMenu=85,mLarg=200,mAlt=50,arrbord=33;
 var yTxtMenu = 120,xTxtMenu =150, op=0,txtVoltar="Esc(Voltar)";
 var img_prof,img_prog,vd,playTrilha = false,gameover = false;
